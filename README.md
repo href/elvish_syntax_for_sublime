@@ -1,4 +1,4 @@
-# Edge Syntax Highlighter
+# Elvish Syntax Highlighting for Sublime Text 3
 
 This package adds syntax highlighting for the [Elvish](https://elv.sh) shell.
 
