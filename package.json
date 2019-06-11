@@ -10,11 +10,10 @@
             "labels": ["shell", "elvish", "language syntax"],
             "releases": [
                 {
-                    "sublime_text": ">=3207",
-                    "platforms": ["windows", "osx", "linux"],
+                    "sublime_text": ">=3092",
                     "version": "0.0.1",
                     "url": "https://github.com/href/elvish-syntax-for-sublime/archive/0.0.1.zip",
-                    "date": "2019-06-11 14:00:00"
+                    "date": "2019-06-11 15:00:00"
                 }
             ]
         }
