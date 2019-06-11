@@ -1,0 +1,22 @@
+{
+    "schema_version": "3.0.0",
+    "packages": [
+        {
+            "name": "Elvish Syntax",
+            "description": "Elvish shell syntax highlighting",
+            "author": "Denis Krienbühl",
+            "homepage": "https://github.com/href/elvish-syntax-for-sublime",
+            "details": "https://github.com/href/elvish-syntax-for-sublime",
+            "labels": ["shell", "elvish", "language syntax"],
+            "releases": [
+                {
+                    "sublime_text": ">=3207",
+                    "platforms": ["windows", "osx", "linux"],
+                    "version": "0.0.1",
+                    "url": "https://github.com/href/elvish-syntax-for-sublime/archive/0.0.1.zip",
+                    "date": "2019-06-11 14:00:00"
+                }
+            ]
+        }
+    ]
+}
