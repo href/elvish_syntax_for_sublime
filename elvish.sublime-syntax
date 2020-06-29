@@ -230,6 +230,8 @@ contexts:
       scope: support.function.elvish
     - match: \b(from-json)\s
       scope: support.function.elvish
+    - match: \b(from-lines)\s
+      scope: support.function.elvish
     - match: \b(get-env)\s
       scope: support.function.elvish
     - match: \b(has-env)\s
@@ -256,6 +258,8 @@ contexts:
       scope: support.function.elvish
     - match: \b(ord)\s
       scope: support.function.elvish
+    - match: \b(order)\s
+      scope: support.function.elvish
     - match: \b(path-[a-z-]+)\s
       scope: support.function.elvish
     - match: \b(peach)\s
@@ -277,6 +281,10 @@ contexts:
     - match: \b(rand)\s
       scope: support.function.elvish
     - match: \b(randint)\s
+      scope: support.function.elvish
+    - match: \b(read-line)\s
+      scope: support.function.elvish
+    - match: \b(read-upto)\s
       scope: support.function.elvish
     - match: \b(repeat)\s
       scope: support.function.elvish
@@ -308,5 +316,11 @@ contexts:
       scope: support.function.elvish
     - match: \b(to-json)\s
       scope: support.function.elvish
+    - match: \b(to-lines)\s
+      scope: support.function.elvish
     - match: \b(to-string)\s
+      scope: support.function.elvish
+    - match: \b(unset-env)\s
+      scope: support.function.elvish
+    - match: \b(wcswidth)\s
       scope: support.function.elvish
