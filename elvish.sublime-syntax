@@ -64,6 +64,10 @@ contexts:
       scope: keyword.control.elvish
     - match: \b(for)\s
       scope: keyword.control.elvish
+    - match: \b(var)\s
+      scope: storage.modifier.elvish
+    - match: \b(set)\s
+      scope: storage.modifier.elvish
     - match: \b(del)\s
       scope: storage.modifier.elvish
     - match: \b(and)\s
@@ -190,7 +194,11 @@ contexts:
       scope: support.function.elvish
     - match: \b(assoc)\s
       scope: support.function.elvish
+    - match: \b(base)\s
+      scope: support.function.elvish
     - match: \b(bool)\s
+      scope: support.function.elvish
+    - match: \b(break)\s
       scope: support.function.elvish
     - match: \b(cd)\s
       scope: support.function.elvish
@@ -198,7 +206,11 @@ contexts:
       scope: support.function.elvish
     - match: \b(constantly)\s
       scope: support.function.elvish
+    - match: \b(continue)\s
+      scope: support.function.elvish
     - match: \b(count)\s
+      scope: support.function.elvish
+    - match: \b(deprecate)\s
       scope: support.function.elvish
     - match: \b(dir-history)\s
       scope: support.function.elvish
@@ -214,11 +226,11 @@ contexts:
       scope: support.function.elvish
     - match: \b(eq)\s
       scope: support.function.elvish
+    - match: \b(eval)\s
+      scope: support.function.elvish
     - match: \b(exec)\s
       scope: support.function.elvish
     - match: \b(exit)\s
-      scope: support.function.elvish
-    - match: \b(explode)\s
       scope: support.function.elvish
     - match: \b(external)\s
       scope: support.function.elvish
@@ -226,11 +238,15 @@ contexts:
       scope: support.function.elvish
     - match: \b(fclose)\s
       scope: support.function.elvish
+    - match: \b(float64)\s
+      scope: support.function.elvish
     - match: \b(fopen)\s
       scope: support.function.elvish
     - match: \b(from-json)\s
       scope: support.function.elvish
     - match: \b(from-lines)\s
+      scope: support.function.elvish
+    - match: \b(-gc)\s
       scope: support.function.elvish
     - match: \b(get-env)\s
       scope: support.function.elvish
@@ -238,17 +254,25 @@ contexts:
       scope: support.function.elvish
     - match: \b(has-external)\s
       scope: support.function.elvish
+    - match: \b(has-key)\s
+      scope: support.function.elvish
     - match: \b(has-prefix)\s
       scope: support.function.elvish
     - match: \b(has-suffix)\s
       scope: support.function.elvish
-    - match: \b(is)\s
+    - match: \b(has-value)\s
       scope: support.function.elvish
-    - match: \b(joins)\s
+    - match: \b(-ifaddrs)\s
+      scope: support.function.elvish
+    - match: \b(is)\s
       scope: support.function.elvish
     - match: \b(keys)\s
       scope: support.function.elvish
     - match: \b(kind-of)\s
+      scope: support.function.elvish
+    - match: \b(-log)\s
+      scope: support.function.elvish
+    - match: \b(make-map)\s
       scope: support.function.elvish
     - match: \b(nop)\s
       scope: support.function.elvish
@@ -256,31 +280,41 @@ contexts:
       scope: support.function.elvish
     - match: \b(not-eq)\s
       scope: support.function.elvish
+    - match: \b(ns)\s
+      scope: support.function.elvish
+    - match: \b(one)\s
+      scope: support.function.elvish
+    - match: \b(only-bytes)\s
+      scope: support.function.elvish
+    - match: \b(only-values)\s
+      scope: support.function.elvish
     - match: \b(ord)\s
       scope: support.function.elvish
     - match: \b(order)\s
       scope: support.function.elvish
-    - match: \b(path-[a-z-]+)\s
+    - match: \b(path-*)\s
       scope: support.function.elvish
     - match: \b(peach)\s
       scope: support.function.elvish
     - match: \b(pipe)\s
       scope: support.function.elvish
-    - match: \b(prclose)\s
-      scope: support.function.elvish
-    - match: \b(put)\s
-      scope: support.function.elvish
     - match: \b(pprint)\s
+      scope: support.function.elvish
+    - match: \b(prclose)\s
       scope: support.function.elvish
     - match: \b(print)\s
       scope: support.function.elvish
-    - match: \b(pwclose)\s
+    - match: \b(printf)\s
       scope: support.function.elvish
-    - match: \b(range)\s
+    - match: \b(put)\s
+      scope: support.function.elvish
+    - match: \b(pwclose)\s
       scope: support.function.elvish
     - match: \b(rand)\s
       scope: support.function.elvish
     - match: \b(randint)\s
+      scope: support.function.elvish
+    - match: \b(range)\s
       scope: support.function.elvish
     - match: \b(read-line)\s
       scope: support.function.elvish
@@ -288,11 +322,11 @@ contexts:
       scope: support.function.elvish
     - match: \b(repeat)\s
       scope: support.function.elvish
-    - match: \b(replaces)\s
-      scope: support.function.elvish
     - match: \b(repr)\s
       scope: support.function.elvish
     - match: \b(resolve)\s
+      scope: support.function.elvish
+    - match: \b(return)\s
       scope: support.function.elvish
     - match: \b(run-parallel)\s
       scope: support.function.elvish
@@ -300,11 +334,17 @@ contexts:
       scope: support.function.elvish
     - match: \b(set-env)\s
       scope: support.function.elvish
+    - match: \b(show)\s
+      scope: support.function.elvish
+    - match: \b(sleep)\s
+      scope: support.function.elvish
     - match: \b(slurp)\s
       scope: support.function.elvish
-    - match: \b(splits)\s
+    - match: \b(-source)\s
       scope: support.function.elvish
     - match: \b(src)\s
+      scope: support.function.elvish
+    - match: \b(-stack)\s
       scope: support.function.elvish
     - match: \b(styled)\s
       scope: support.function.elvish
@@ -314,6 +354,8 @@ contexts:
       scope: support.function.elvish
     - match: \b(tilde-abbr)\s
       scope: support.function.elvish
+    - match: \b(time)\s
+      scope: support.function.elvish
     - match: \b(to-json)\s
       scope: support.function.elvish
     - match: \b(to-lines)\s
@@ -321,6 +363,8 @@ contexts:
     - match: \b(to-string)\s
       scope: support.function.elvish
     - match: \b(unset-env)\s
+      scope: support.function.elvish
+    - match: \b(use-mod)\s
       scope: support.function.elvish
     - match: \b(wcswidth)\s
       scope: support.function.elvish
