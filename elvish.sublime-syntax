@@ -202,8 +202,6 @@ contexts:
       scope: support.function.elvish
     - match: \b(cd)\s
       scope: support.function.elvish
-    - match: \b(chr)\s
-      scope: support.function.elvish
     - match: \b(constantly)\s
       scope: support.function.elvish
     - match: \b(continue)\s
@@ -228,6 +226,8 @@ contexts:
       scope: support.function.elvish
     - match: \b(eval)\s
       scope: support.function.elvish
+    - match: \b(exact-num)\s
+      scope: support.function.elvish
     - match: \b(exec)\s
       scope: support.function.elvish
     - match: \b(exit)\s
@@ -246,6 +246,8 @@ contexts:
       scope: support.function.elvish
     - match: \b(from-lines)\s
       scope: support.function.elvish
+    - match: \b(from-terminated)\s
+      scope: support.function.elvish
     - match: \b(-gc)\s
       scope: support.function.elvish
     - match: \b(get-env)\s
@@ -255,10 +257,6 @@ contexts:
     - match: \b(has-external)\s
       scope: support.function.elvish
     - match: \b(has-key)\s
-      scope: support.function.elvish
-    - match: \b(has-prefix)\s
-      scope: support.function.elvish
-    - match: \b(has-suffix)\s
       scope: support.function.elvish
     - match: \b(has-value)\s
       scope: support.function.elvish
@@ -282,13 +280,13 @@ contexts:
       scope: support.function.elvish
     - match: \b(ns)\s
       scope: support.function.elvish
+    - match: \b(num)\s
+      scope: support.function.elvish
     - match: \b(one)\s
       scope: support.function.elvish
     - match: \b(only-bytes)\s
       scope: support.function.elvish
     - match: \b(only-values)\s
-      scope: support.function.elvish
-    - match: \b(ord)\s
       scope: support.function.elvish
     - match: \b(order)\s
       scope: support.function.elvish
@@ -340,8 +338,6 @@ contexts:
       scope: support.function.elvish
     - match: \b(slurp)\s
       scope: support.function.elvish
-    - match: \b(-source)\s
-      scope: support.function.elvish
     - match: \b(src)\s
       scope: support.function.elvish
     - match: \b(-stack)\s
@@ -361,6 +357,8 @@ contexts:
     - match: \b(to-lines)\s
       scope: support.function.elvish
     - match: \b(to-string)\s
+      scope: support.function.elvish
+    - match: \b(to-terminated)\s
       scope: support.function.elvish
     - match: \b(unset-env)\s
       scope: support.function.elvish
